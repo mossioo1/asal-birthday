@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090817">
+<title>جهان عسل ✦ تولدت مبارک</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+:root{--bg:#090817;--pink:#ff8fcf;--gold:#f6d69a;--muted:#c7bfdc;--line:#ffffff22}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#fff;font-family:Vazirmatn,Tahoma,sans-serif;min-height:100vh;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+#sky{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
+.aurora{position:fixed;inset:-20%;pointer-events:none;background:radial-gradient(ellipse at 18% 25%,#6c3dad38,transparent 40%),radial-gradient(ellipse at 80% 68%,#c2368730,transparent 38%);filter:blur(20px);animation:aurora 14s ease-in-out infinite alternate}
+@keyframes aurora{to{transform:translate(3%,-2%) scale(1.08)}}
+main{position:relative;z-index:1}
+.screen{min-height:100vh;min-height:100svh;display:none;align-items:center;justify-content:center;padding:28px 18px}
+.screen.active{display:flex;animation:appear .7s ease both}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.wrap{width:min(100%,680px);text-align:center;margin:auto}
+.eyebrow{color:var(--gold);font-size:.78rem}
+h1{font-size:clamp(2.5rem,10vw,4.8rem);margin:15px 0;line-height:1.3}
+h2{font-size:clamp(1.6rem,6vw,2.5rem);line-height:1.5;margin:12px 0 18px}
+p{color:var(--muted);line-height:2;font-size:1rem}
+.glow{color:#ffcae8;text-shadow:0 0 24px #ff8fcf55}
+.btn{border:1px solid #ffcae899;background:linear-gradient(135deg,#ff8fcf38,#8464d138);color:white;border-radius:999px;padding:13px 23px;transition:.25s}
+.btn:hover{transform:translateY(-2px);border-color:var(--pink)}
+.btn.secondary{border-color:var(--line);background:#ffffff08;color:var(--muted)}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+.tiny{font-size:.8rem;color:#8f87ad;margin-top:18px}
+.orb{width:clamp(125px,35vw,190px);aspect-ratio:1;border-radius:50%;margin:0 auto 28px;background:radial-gradient(circle at 35% 28%,#fff0fb,#ffaddd 5%,#bb6cce 20%,#4a367e 45%,#16132f 70%);box-shadow:0 0 35px #c46fc744,0 0 95px #8d4fbd33;animation:float 5s ease-in-out infinite;position:relative}
+.orb:after{content:"";position:absolute;inset:-15px;border:1px solid #ffd8f388;border-radius:50%;transform:scaleY(.4) rotate(-25deg)}
+@keyframes float{50%{transform:translateY(-9px)}}
+.seal{width:105px;height:105px;border-radius:50%;margin:0 auto 24px;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#ffd7ed,#c958a2 58%,#6e285f);box-shadow:0 0 50px #ed82c744;border:1px solid #ffd9f0}
+.seal span{font-size:2.6rem}
+.letter{padding:24px 22px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#ffffff15,#ffffff06);text-align:right;box-shadow:0 18px 70px #0003}
+.letter p:last-child{margin-bottom:0}
+.progress{display:flex;justify-content:center;gap:8px;margin:0 auto 22px}
+.progress i{width:7px;height:7px;border-radius:50%;background:#6b6284}
+.progress i.done{background:var(--pink);box-shadow:0 0 12px #ff8fcf88}
+.star-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:25px 0}
+.star-card{min-height:140px;padding:18px 10px;border-radius:20px;border:1px solid var(--line);background:#ffffff0c;color:white;transition:.25s}
+.star-card:hover{transform:translateY(-3px);border-color:#ffb7e4aa}
+.star-card .symbol{display:block;font-size:2rem;margin-bottom:9px}
+.star-card strong,.star-card small{display:block}
+.star-card small{color:#a9a0c5;margin-top:5px}
+.star-card.opened{border-color:#ff9bd6aa;background:#ff8fcf20}
+.star-card.opened:after{content:"✓";color:var(--gold)}
+.modal{position:fixed;inset:0;z-index:5;background:#05040edb;display:none;align-items:center;justify-content:center;padding:18px}
+.modal.show{display:flex;animation:appear .25s ease}
+.modal-card{width:min(100%,480px);border:1px solid #ffb5e455;border-radius:24px;background:linear-gradient(150deg,#211635,#101025);padding:26px 22px;text-align:center}
+.modal-card .symbol{font-size:2.6rem}
+.cake{font-size:5rem;animation:float 4s ease-in-out infinite}
+.candle{display:inline-block;animation:flicker 1s infinite alternate}
+@keyframes flicker{to{filter:drop-shadow(0 0 12px #ffe9a0);transform:scale(1.08)}}
+.final-note{font-size:1rem;color:#f3e8fa;line-height:2.2;white-space:pre-line}
+.signature{color:#ffcae8;font-weight:700;margin-top:18px}
+footer{color:#776d98;font-size:.75rem;margin-top:25px}
+#toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#221a39;border:1px solid #ffb4e455;padding:10px 16px;border-radius:99px;opacity:0;transition:.3s;z-index:10;font-size:.8rem}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+@media(min-width:560px){.star-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="sky"></canvas><div class="aurora"></div>
+<main>
+<section class="screen active" id="s0"><div class="wrap">
+<div class="eyebrow">یک پیام از جایی دورتر از ستاره‌ها</div>
+<div class="orb"></div><p>این جهان مدت‌هاست منتظر یک نفره...</p>
+<h1 class="glow">عسل</h1><p>و امشب، همه‌چیز برای تو روشن می‌شه.</p>
+<button class="btn" onclick="go(1)">باز کردن دروازه ✦</button>
+<div class="tiny">با صدای قلبت وارد شو؛ عجله‌ای نیست.</div>
+</div></section>
+
+<section class="screen" id="s1"><div class="wrap">
+<div class="seal"><span>✉</span></div><div class="eyebrow">نامه‌ای که فقط یک مقصد داشت</div>
+<h2>برای <span class="glow">عسل</span>، با تمام ستاره‌ها</h2>
+<div class="letter">
+<p>بعضی آدم‌ها فقط وارد روزهای ما نمی‌شن؛ بی‌خبر، رنگ روزها رو عوض می‌کنن.</p>
+<p>این صفحه یه جهان کوچیکه که با فکر تو ساخته شده؛ نه برای اینکه چیزی رو ثابت کنه، فقط برای اینکه امروز یادت بمونه چقدر ارزشمند و دوست‌داشتنی هستی.</p>
+<p>پس آروم ورق بزن... هر گوشه‌اش یه تکه از این سورپرایزه.</p>
+</div>
+<div class="actions"><button class="btn" onclick="go(2)">رفتن به آسمون من ✨</button><button class="btn secondary" onclick="go(0)">برگشت</button></div>
+</div></section>
+
+<section class="screen" id="s2"><div class="wrap">
+<div class="eyebrow">چهار ستاره؛ چهار سورپرایز</div><h2>کدوم ستاره صدات می‌زنه؟</h2>
+<p>هر کدوم رو لمس کن؛ یه پیام کوچیک توی دلش پنهونه.</p>
+<div class="star-grid">
+<button class="star-card" data-star="0" onclick="openStar(0)"><span class="symbol">✦</span><strong>ستارهٔ اول</strong><small>چیزی که باید بدونی</small></button>
+<button class="star-card" data-star="1" onclick="openStar(1)"><span class="symbol">☾</span><strong>هلال ماه</strong><small>چیزهای خاص تو</small></button>
+<button class="star-card" data-star="2" onclick="openStar(2)"><span class="symbol">♡</span><strong>قلب مخفی</strong><small>یه آرزوی قشنگ</small></button>
+<button class="star-card" data-star="3" onclick="openStar(3)"><span class="symbol">❀</span><strong>گل شب</strong><small>یه یادگاری برای همیشه</small></button>
+</div>
+<div class="progress"><i></i><i></i><i></i><i></i></div>
+<p id="progressText">هنوز هیچ ستاره‌ای باز نشده؛ همه منتظر توئن.</p>
+<div class="actions"><button class="btn" id="continueBtn" onclick="go(3)" disabled style="opacity:.45">ادامهٔ داستان 🔮</button><button class="btn secondary" onclick="go(1)">برگشت به نامه</button></div>
+</div></section>
+
+<section class="screen" id="s3"><div class="wrap">
+<div class="eyebrow">یه لحظه فقط برای خودت</div><div class="cake">🎂</div>
+<h2>آرزو کن، <span class="glow">عسل</span>...</h2>
+<p>یه آرزوی قشنگ توی دلت نگه دار. لازم نیست به کسی بگی؛ بعضی آرزوها فقط به شنیدن قلب خودت احتیاج دارن.</p>
+<div style="font-size:2rem;margin:25px 0"><span class="candle">🕯️</span> <span class="candle">🕯️</span> <span class="candle">🕯️</span></div>
+<button class="btn" id="wishBtn" onclick="makeWish()">آرزوم رو کردم ✨</button>
+<p id="wishMessage" hidden style="color:#ffcae8">امیدوارم زندگی، قشنگ‌ترین جواب‌هاشو بهت بده. 💫</p>
+<div class="actions"><button class="btn" onclick="go(4)">باز کردن آخرین پاکت 💌</button></div>
+</div></section>
+
+<section class="screen" id="s4"><div class="wrap">
+<div class="seal"><span>♡</span></div><div class="eyebrow">آخرین پاکت؛ اما نه آخرین خاطره</div>
+<h2 class="glow">تولدت مبارک، عسل</h2>
+<div class="letter">
+<p class="final-note">عسل جان،
+
+امیدوارم سال تازهٔ زندگیت پر از آرامش، خنده‌های واقعی، آدم‌های امن و اتفاق‌هایی باشه که مدت‌ها منتظرشون بودی.
+
+امیدوارم هیچ‌وقت یادت نره که حضورت می‌تونه دنیا رو برای آدم‌های اطرافت روشن‌تر کنه؛ درست مثل ستاره‌ای که حتی توی تاریک‌ترین آسمون هم راه رو نشون می‌ده.
+
+این جهان کوچیک رو ساختم تا یه گوشه از اینترنت، همیشه یه جای مخصوص برای جشن گرفتن تو وجود داشته باشه.
+
+تولدت مبارک؛ برای تو، برای آرزوهات، و برای تمام فصل‌های قشنگی که هنوز نرسیدن. ❤️</p>
+<div class="signature">با عشق و بهترین آرزوها،<br>محسن ❤️</div>
+</div>
+<div class="actions"><button class="btn" onclick="replay()">از اول، دوباره ✨</button><button class="btn secondary" onclick="copyLink()">کپی لینک این خاطره 🔗</button></div>
+<footer>این جهان کوچیک، برای عسل ساخته شده ✦</footer>
+</div></section>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+<div class="modal-card"><div class="symbol" id="modalSymbol">✦</div><h2 id="modalTitle">پیام ستاره</h2><p id="modalText"></p><button class="btn" onclick="closeStar()">برگرد به آسمون ✨</button></div>
+</div>
+<div id="toast"></div>
+
+<script>
+const messages=[
+{symbol:"✦",title:"یه چیز مهم که باید بدونی",text:"عسل، لازم نیست همیشه قوی باشی یا همه‌چیز رو بی‌نقص انجام بدی. همین که خودتی، با تمام رویاها و روزهای خوب و سختت، ارزشمنده. امیدوارم امسال بیشتر از همیشه با خودت مهربون باشی."},
+{symbol:"☾",title:"چیزهایی که تو رو خاص می‌کنن",text:"خاص بودن همیشه به کارهای بزرگ نیست؛ گاهی توی طرز خندیدن، مهربونی‌های کوچیک، نگاه متفاوتت به دنیا و اثریه که بی‌اینکه بدونی روی آدم‌ها می‌ذاری. امیدوارم خودت هم زیبایی‌های وجودت رو ببینی."},
+{symbol:"♡",title:"یه آرزو برای تو",text:"آرزو می‌کنم روزهایی در انتظارت باشن که توشون از ته دل بخندی، به خودت افتخار کنی، چیزهای تازه کشف کنی و شب‌ها با خیال راحت بخوابی. امیدوارم نور و امید همراهت باشن."},
+{symbol:"❀",title:"این یادگاری مال توئه",text:"هر وقت روزی خسته‌کننده داشتی یا دلت خواست یه لبخند کوچیک بزنی، می‌تونی برگردی به این صفحه. اینجا یه یادآوری کوچیک منتظرته: تو شایستهٔ شادی، احترام، آرامش و کلی اتفاق قشنگی."}
+];
+const opened=new Set();let timer;
+function go(n){document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));document.getElementById("s"+n).classList.add("active");window.scrollTo({top:0,behavior:"smooth"})}
+function openStar(i){let m=messages[i];document.getElementById("modalSymbol").textContent=m.symbol;document.getElementById("modalTitle").textContent=m.title;document.getElementById("modalText").textContent=m.text;document.getElementById("modal").classList.add("show");opened.add(i);document.querySelector('[data-star="'+i+'"]').classList.add("opened");document.querySelectorAll(".progress i").forEach((e,j)=>e.classList.toggle("done",opened.size>j));document.getElementById("progressText").textContent=opened.size===4?"هر چهار ستاره روشن شدن؛ حالا وقت آخرین سورپرایزه.":opened.size+" تا از ۴ ستاره رو کشف کردی.";if(opened.size===4){let b=document.getElementById("continueBtn");b.disabled=false;b.style.opacity="1"}}
+function closeStar(){document.getElementById("modal").classList.remove("show")}
+document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeStar()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeStar()});
+function burst(x,y){for(let i=0;i<32;i++){let a=Math.random()*Math.PI*2,d=30+Math.random()*140,e=document.createElement("span");e.textContent=Math.random()>.5?"✦":"♡";e.style.cssText=`position:fixed;z-index:9;left:${x}px;top:${y}px;color:#ff9bd6;pointer-events:none;transition:transform 1s,opacity 1s`;document.body.appendChild(e);requestAnimationFrame(()=>{e.style.transform=`translate(${Math.cos(a)*d}px,${Math.sin(a)*d}px)`;e.style.opacity=0});setTimeout(()=>e.remove(),1100)}}
+function makeWish(){let b=document.getElementById("wishBtn");b.textContent="آرزوت رو به جهان سپردی ✨";b.disabled=true;document.getElementById("wishMessage").hidden=false;burst(innerWidth/2,innerHeight*.55)}
+function replay(){opened.clear();document.querySelectorAll(".star-card").forEach(e=>e.classList.remove("opened"));document.querySelectorAll(".progress i").forEach(e=>e.classList.remove("done"));document.getElementById("progressText").textContent="هنوز هیچ ستاره‌ای باز نشده؛ همه منتظر توئن.";let b=document.getElementById("continueBtn");b.disabled=true;b.style.opacity=".45";document.getElementById("wishBtn").disabled=false;document.getElementById("wishBtn").textContent="آرزوم رو کردم ✨";document.getElementById("wishMessage").hidden=true;go(0)}
+function toast(t){let e=document.getElementById("toast");e.textContent=t;e.classList.add("show");clearTimeout(timer);timer=setTimeout(()=>e.classList.remove("show"),2400)}
+async function copyLink(){try{await navigator.clipboard.writeText(location.href);toast("لینک کپی شد؛ بفرستش برای عسل ❤️")}catch(e){toast("لینک رو از نوار آدرس مرورگر کپی کن ❤️")}}
+const canvas=document.getElementById("sky"),ctx=canvas.getContext("2d");let stars=[],w,h,dpr;
+function resize(){dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);stars=Array.from({length:Math.min(130,Math.floor(w*h/6500))},()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.5+.25,a:Math.random()*.65+.15,s:Math.random()*.012+.003,p:Math.random()*6.28}))}
+function draw(){ctx.clearRect(0,0,w,h);for(const s of stars){s.p+=s.s;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle="rgba(255,225,246,"+s.a*(.65+.35*Math.sin(s.p))+")";ctx.fill()}requestAnimationFrame(draw)}
+addEventListener("resize",resize);resize();draw();setTimeout(()=>burst(innerWidth/2,innerHeight*.42),900);
+</script>
+</body>
+  </html>
+  
